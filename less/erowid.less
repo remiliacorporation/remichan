@@ -1,0 +1,158 @@
+@import "common.mix.less";
+// MAIN FONT COLOR */
+@body: silver;
+@bodyBG: black;
+@font-family: Arial, Helvetica, sans-serif;
+@font-size: 0.8;
+// POST BODY */
+@postBG: #321929;
+@border: 2px outset black;
+@postmargin: 0.2em;
+@setwidth: inherit;
+
+//NAME (ANONYMOUS)*/
+@bold: goldenrod;
+
+// LINKS */
+@link: darkgoldenrod;
+@linkhover: slategray;
+
+// QUOTE LINK*/
+blockquote a { color: #aaacfc; }
+
+// GREENTEXT */
+@em: darkseagreen;
+
+//OP SUBJECT*/
+@subject: mediumseagreen;
+
+// POST BG/BORDER ON EDIT/HIGHLIGHT*/
+@postEDIT: #3a3f3a;
+@postHL: #2f1a3d;
+
+// BANNER */
+@bannerBG: #10001c;
+@bannernav: white;
+
+// BOARD NAME */
+@boardname: orange;
+
+// ADMIN NAMES */
+@admin: red;
+@mod: purple;
+@red: @admin;
+
+// HR */
+hr { border-top: 1px solid thistle; margin-top: 2em;}
+
+// MAIN OPTIONS */
+@optionselect: #aaacfc;
+
+// POST OPTIONS */
+@postoptBG: @bannerBG;
+@postoptHOVER: darkblue;
+
+// ?? */
+@del: white;
+@blue: blue;
+
+// BODY */
+body {
+  font-family: @font-family;
+  color: @body;
+  background-color: @bodyBG;
+  font-size: @font-size;
+  margin-left: 2em;
+}
+
+body {
+  background-image: url("bar_squiggle.gif");
+  background-repeat: repeat;
+}
+
+// HIGHLIGHT POSTED: SELECTED; EDITING */
+article {
+	&.highlight:not(.editing), &:target {
+    background-color: @postHL;
+    color: white;
+    b {
+      color: @bold;
+    }
+    border: @border
+
+	}
+	&.editing {
+    background-color: @postEDIT;
+		b {
+			color: @bold;
+		}
+	blockquote a, a {color: #aaacfc; }
+	
+	article {
+		border: @border;
+	}
+}
+}
+
+
+.popup-menu li:hover {
+	background-color: @postoptHOVER;
+}
+
+.modal, .preview:not(.editing), .popup-menu {
+	background-color: @postoptBG;
+	border: 1px solid white;
+}
+
+a { color: @link; }
+a:hover { color: @linkhover !important; }
+
+em { color: @em}
+
+// HEADER SETTINGS */
+h1 {
+  color: white;
+  font-weight:bold;
+	font-size: 1.2em;
+}
+
+h2 {
+}
+h3 {
+  color: @subject;
+}
+.act { color: @body; }
+
+// STANDARD POST */
+article, aside {
+  color: @body;
+  background-color: @postBG;
+  border: @border;
+	margin-bottom: @postmargin;
+}
+
+article { width: @setwidth; }
+
+b {
+  color: @bold;
+}
+
+a.tab-sel {
+  color: @optionselect;
+}
+
+// HEADER LINKS*/
+#banner {
+  background: @bannerBG;
+  a {
+    color: @bannernav;
+  }
+}
+
+header nav a {
+  color: @body;
+}
+
+.omit {
+  color: gray;
+}

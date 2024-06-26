@@ -1,0 +1,500 @@
+{
+	"forms": {
+		"FAQ": [
+			"Panneau d'information",
+			"Message à afficher dans la Foire Aux Questions"
+		],
+		"NSFW": [
+			"NSFW",
+			"Cette planche autorise du contenu qui n'est pas recommandé dans un environnement de travail"
+		],
+		"alwaysLock": [
+			"Toujours se fixer au bas",
+			"Verouille le défilement au bas de la page même si l'onglet est caché"
+		],
+		"anonymise": [
+			"Anonymiser",
+			"Cache le nom de tous les utilisateurs"
+		],
+		"audioVolume": [
+			"Audio volume",
+			"Volume du son pour musique et lecteur vidéo"
+		],
+		"autogif": [
+			"Vignettes GIF animées",
+			"Anime les GIF miniaturisés"
+		],
+		"bgMute": [
+			"Mute Background Video",
+			"Met en sourdine la vidéo d'arrière-plan"
+		],
+		"bgVideo": [
+			"Background Video",
+			"Mèmes moulés à la louche par l'admin, livrés directement dans votre moniteur"
+		],
+		"boardExpiry": [
+			"Expiration d'une planche",
+			"Nombre de jours sans nouveaux messages avant la suppression d'une planche"
+		],
+		"boardName": [
+			"Nom de la planche",
+			"Peut contenir jusqu'à 10 chiffres ou lettres minuscules (exemple : pol)"
+		],
+		"boardTitle": [
+			"Titre de la planche",
+			"Peut contenir jusqu'à 100 caractères (exemple : Politique)"
+		],
+		"body": [
+			"Message",
+			"Votre message"
+		],
+		"captcha": [
+			"Captcha",
+			"Demande aux utilisateurs de compléter un captcha pour certaines tâches comme l'enregistrement ou la création d'un sujet"
+		],
+		"captchaTags": [
+			"Captcha tags",
+			"Tags à utiliser pour les solutions de captcha. Un tag est choisi aléatoirement pour chaque captcha généré. Contient nécessairement au moins 3 tags."
+		],
+		"charScore": [
+			"Score de spam par caractère",
+			"Poids antispam lors de la modification d'un caractère dans un message. Après avoir excédé la limite, l'utilisateur devra remplir un captcha."
+		],
+		"customCSS": [
+			"",
+			"Feuille de style personnalisée à charger par dessus le thème sélectionné"
+		],
+		"customCSSToggle": [
+			"CSS personnalisé",
+			"Active la feuille de style personnalisée"
+		],
+		"defaultCSS": [
+			"Thème",
+			"Thème à charger par défaut si l'utilisateur n'en a sélectionné aucun"
+		],
+		"defaultLang": [
+			"Langue par défaut",
+			"Langue à charger par défaut"
+		],
+		"desustorage": [
+			"DesuStorage",
+			"Recheche d'image desustorage.org"
+		],
+		"disableRobots": [
+			"Bloquer les robots",
+			"Empêche les robots d'exploration d'accéder à la planche"
+		],
+		"disableUserBoards": [
+			"Planches par l'admin",
+			"Seul l'administrateur du site peut créer de nouvelles planches"
+		],
+		"done": [
+			"Terminer le message",
+			"Termine le message ouvert"
+		],
+		"eightball": [
+			"Questions #8ball",
+			"Peut contenir 100 questions et un total de 2000 caractères"
+		],
+		"emailErr": [
+			"Courriel d'erreur",
+			"Activer les courriels en cas de bogue."
+		],
+		"emailErrMail": [
+			"Adresse",
+			"Adresse courriel d'erreur."
+		],
+		"emailErrPass": [
+			"Mot de passe",
+			"Mot de passe de l'adresse courriel."
+		],
+		"emailErrPort": [
+			"Port serveur courriel",
+			"Port du serveur de courriel d'erreur."
+		],
+		"emailErrSub": [
+			"Serveur courriel",
+			"Sous-domaine du serveur de courriel d'erreur."
+		],
+		"exhentai": [
+			"Exhentai",
+			"Recherche d'image exhentai.org"
+		],
+		"expandAll": [
+			"Étendre les images",
+			"Étend toutes les images"
+		],
+		"export": [
+			"Exporter",
+			"Télécharge le fichier des paramètres"
+		],
+		"feedbackEmail": [
+			"Courriel",
+			"Adresse de contact"
+		],
+		"flags": [
+			"Drapeau",
+			"Affiche le drapeau du pays de l'utilisateur"
+		],
+		"forcedAnon": [
+			"Anonymat forcé",
+			"Désactive les informations personnelles des publications"
+		],
+		"galleryMode": [
+			"Mode galerie",
+			"Affiche uniquement les publications avec des images"
+		],
+		"google": [
+			"Google",
+			"Recherche d'image Google"
+		],
+		"hidden": [
+			"Caché : 0",
+			"Remet à zéro la liste des messages cachés"
+		],
+		"hideBinned": [
+			"Hide Deleted Posts",
+			"Hide all posts that have been deleted"
+		],
+		"hideNSFW": [
+			"Cacher le NSFW sur /all/",
+			"Cache les planches avec du contenu peu recommandable sur /all/"
+		],
+		"hideRecursively": [
+			"Cacher récursivement",
+			"Dissimule toutes les réponses d'un message caché"
+		],
+		"hideThumbs": [
+			"Cacher les images",
+			"Remplace les images par un bouton [Afficher]"
+		],
+		"horizontalPosting": [
+			"Sujets horizontaux",
+			"Affiche les sujets en lecture horizontale"
+		],
+		"id": [
+			"Identifiant",
+			""
+		],
+		"imageHover": [
+			"Image au passage de la souris",
+			"Affiche une prévisualisation de l'image au passage de la souris"
+		],
+		"imageRootOverride": [
+			"Emplacement des images",
+			"Pour héberger les images depuis un emplacement distant (vide = valeur par défaut)"
+		],
+		"imageScore": [
+			"Image spam score",
+			"Poids antispam lors du téléversement d'une image. Après avoir excédé la limite, l'utilisateur devra remplir un captcha."
+		],
+		"import": [
+			"Importer",
+			"Charge un fichier de paramètres"
+		],
+		"inlineFit": [
+			"Extension",
+			"Manière d'étendre les images à l'intérieur du message parent"
+		],
+		"iqdb": [
+			"IQDB",
+			"Recherche d'image iqdb.org"
+		],
+		"janitors": [
+			"Concierges",
+			"Peut seulement supprimer les messages"
+		],
+		"lang": [
+			"Langue",
+			"Change la langue de l'interface"
+		],
+		"links": [
+			"Liens externes",
+			"Ajouter, supprimer ou éditer les liens de type >>>/4chan/"
+		],
+		"mascot": [
+			"Mascotte personnalisée",
+			"Active la mascotte personnalisée"
+		],
+		"mascotImage": [
+			"",
+			"Image à utiliser en guise que mascotte"
+		],
+		"mature": [
+			"Contenu pour adulte",
+			"Informe les utilisateurs que votre site contient du contenu pour adulte lors de leur première visite"
+		],
+		"maxHeight": [
+			"Hauteur limite",
+			"Hauteur maximale des images téléchargées"
+		],
+		"maxSize": [
+			"Taille limite",
+			"Taille en MB maximale des images téléchargées"
+		],
+		"maxWidth": [
+			"Largeur limite",
+			"Largeur maximale des images téléchargées"
+		],
+		"meguTV": [
+			"MeguTV",
+			"Joue des vidéos aléatoires et spécifiques à la planche dans un lecteur superposé"
+		],
+		"meguTVShortcut": [
+			"MeguTV",
+			"Joue des vidéos aléatoires et spécifiques à la planche dans un lecteur superposé"
+		],
+		"moderators": [
+			"Modérateurs",
+			"Peut supprimer les messages, bannir et distinguer les utilisateurs"
+		],
+		"name": [
+			"Nom",
+			"Nom à joindre au message"
+		],
+		"newPassword": [
+			"Nouveau mot de passe",
+			""
+		],
+		"newPost": [
+			"Commencer un message",
+			"Commence un nouveau message"
+		],
+		"notice": [
+			"Infos",
+			"Petit message d'information affiché en haut de la page"
+		],
+		"notification": [
+			"Notifications",
+			"Recevoir des notifications lorsque vous êtes cité et bien plus encore"
+		],
+		"nowPlaying": [
+			"Now Playing Banner",
+			"Afficher la chanson en cours sur r/a/dio ou eden et d'autres informations sur le stream dans la bannière du haut."
+		],
+		"oldPassword": [
+			"Ancien mot de passe",
+			""
+		],
+		"overrideCaptchaTags": [
+			"Outrepasser les tags de captcha",
+			"Pairage des planches aux tags à utiliser comme solution de captcha."
+		],
+		"owners": [
+			"Propriétaires",
+			"Possède les pleins pouvoirs"
+		],
+		"password": [
+			"Mot de passe",
+			""
+		],
+		"postCreationScore": [
+			"Post creation spam score",
+			"Poids antispam de la création d'un nouveau message. Après avoir excédé la limite, l'utilisateur devra remplir un captcha."
+		],
+		"postInlineExpand": [
+			"Étendre le message",
+			"Étendre le message cité au sein même de la publication"
+		],
+		"pruneBoards": [
+			"Suppr. auto des planches",
+			"Supprime automatiquement les planches sans nouveaux messages depuis un certain nombre de jours"
+		],
+		"pruneThreads": [
+			"Suppr. auto des sujets",
+			"Supprime automatiquement les sujets sans nouveaux messages depuis un certain nombre de jours"
+		],
+		"pyu": [
+			"Slut enabler",
+			"Pose pas de questions"
+		],
+		"rbText": [
+			"Red/Blue Text",
+			"Affiche du texte en rouge ou en bleu si balisé avec '^r' ou '^b'"
+		],
+		"readOnly": [
+			"Lecture seule",
+			"Désactive la création de nouveaux messages"
+		],
+		"register": [
+			"S'enregistrer",
+			""
+		],
+		"relativeTime": [
+			"Temps écoulé",
+			"Remplace la date par le temps écoulé depuis la publication (exemple : il y a 1 heure)"
+		],
+		"repeat": [
+			"Encore",
+			""
+		],
+		"replyRight": [
+			"[Répondre] à droite",
+			"Déplace le bouton pour répondre à droite de l'écran"
+		],
+		"rootURL": [
+			"URL",
+			"Racine du site"
+		],
+		"rules": [
+			"Règles",
+			"Liste des règles de la planche"
+		],
+		"sage": [
+			"Sage",
+			"Permet de ne pas remonter un sujet lors d'une réponse"
+		],
+		"salt": [
+			"Salage",
+			"Permet de renforcer la sécurité (le code doit faire au moins 40 caractères)"
+		],
+		"saucenao": [
+			"SauceNao",
+			"Recherche d'image saucenao.com"
+		],
+		"sessionExpiry": [
+			"Expiration d'une session",
+			"Nombre de jours avant la déconnexion automatique d'un utilisateur"
+		],
+		"spoilers": [
+			"Spoiler",
+			"Dissimule les images avec l'option spoiler"
+		],
+		"staffTitle": [
+			"Grade",
+			"Affiche votre grade dans l'en-tête du message"
+		],
+		"textOnly": [
+			"Texte seul",
+			"Désactive le téléversement de fichiers"
+		],
+		"theme": [
+			"Thème",
+			"Change le thème par défaut"
+		],
+		"threadExpiryMax": [
+			"Vie maximale d'un sujet",
+			"Nombre de jours sans nouveaux messages avant la suppression d'un sujet"
+		],
+		"threadExpiryMin": [
+			"Vie minimale d'un sujet",
+			"Nombre de jours sans nouveaux messages avant la suppression d'un sujet"
+		],
+		"title": [
+			"Titre",
+			"Titre de la planche"
+		],
+		"toggleSpoiler": [
+			"Dissimuler l'image",
+			"Active l'option spoiler du message ouvert"
+		],
+		"userBG": [
+			"Fond personnalisé",
+			"Active le fond personnalisé"
+		],
+		"userBGImage": [
+			"",
+			"Image à utiliser en guise que fond"
+		],
+		"watchThreadsOnReply": [
+			"Watch threads on reply",
+			"Ajouter automatiquement le fil aux fils suivis après envoi d'une réponse"
+		],
+		"webmHover": [
+			"WebM au passage de la souris",
+			"Affiche une prévisualisation du WebM au passage de la souris (nécessite l'option du dessus)"
+		],
+		"whatAnime": [
+			"WhatAnime",
+			"Recherche de captures d'écran d'anime whatanime.ga"
+		],
+		"workMode": [
+			"Mode travail",
+			"Cache toutes les images"
+		],
+		"workModeToggle": [
+			"Mode travail",
+			"Cache toutes les images et désactive le fond personnalisé"
+		],
+		"yandex": [
+			"Yandex",
+			"Yandex image search"
+		]
+	},
+	"options": {
+		"none": "aucune",
+		"screen": "moniteur",
+		"width": "largeur"
+	},
+	"sortModes": [
+		"Nombre de remontées",
+		"Réponses récentes",
+		"Date de création",
+		"Nombre de réponses",
+		"Nombre de fichiers"
+	],
+	"tabs": [
+		"Général",
+		"Style",
+		"Raccourcis"
+	],
+	"templates": {
+		"banPage": [
+			"Vous avez été banni de /%s/ par %s pour la raison suivante :",
+			"Cette sanction prendra fin le %s, c'est à dire dans %s.",
+			"Selon notre serveur, votre adresse IP est %s."
+		]
+	},
+	"ui": {
+		"FAQ": "Information",
+		"account": "Compte",
+		"add": "Ajouter",
+		"apply": "Appliquer",
+		"assignStaff": "Équipe",
+		"ban": "Bannir",
+		"bannerSpecs": "Accepte jusqu'à 20 fichiers JPEG, PNG, GIF ou WEBM sans son (dimension : 300x100, taille : 100 KB).",
+		"by": "Par",
+		"captcha": "Captcha",
+		"changePassword": "Mot de passe",
+		"classic": "classic",
+		"clear": "Vider",
+		"configureBoard": "Configurer une planche",
+		"configureServer": "Configurer le serveur",
+		"createBoard": "Créer une planche",
+		"data": "Données",
+		"deleteBoard": "Supprimer une planche",
+		"deleteImage": "Supprimer l'image",
+		"deletePost": "Supprimer le message",
+		"duration": "Durée",
+		"expires": "Expire",
+		"feedback": "Courriel",
+		"fuckOff": "CASSE TOI",
+		"global": "Global",
+		"id": "ID",
+		"identity": "Identité",
+		"illegal": "Contenu illégal",
+		"loadCaptcha": "Charger le captcha",
+		"loadingSpecs": "Accepte les fichiers GIF ou WEBM sans son (dimension : 300x300, taille : 100 KB).",
+		"logout": "Déconnexion",
+		"logoutAll": "Déconnexion globale",
+		"notification": "Notification",
+		"options": "Paramètres",
+		"ownNoBoards": "Vous ne possédez aucune planche",
+		"post": "Message",
+		"purgePost": "Éliminer message/image",
+		"searchTooltip": "Filtre les sujets par titre, message ou nom de planche (exemple : /pol/)",
+		"setBanners": "Bannière",
+		"setLoading": "Image de chargement",
+		"shadow": "shadow",
+		"shadowBin": "Shadow bin",
+		"sortMode": "Trier les fils par",
+		"spoilerImage": "Dissimuler l'image",
+		"subject": "Titre",
+		"sync": "Statut de connexion",
+		"syncCount": "Nombre d'IPs uniques connectées actives / nombre d'IPs total",
+		"text": "Texte",
+		"time": "Date",
+		"type": "Type",
+		"unban": "Débannir"
+	}
+}

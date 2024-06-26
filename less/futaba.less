@@ -1,0 +1,152 @@
+@import "common.mix.less";
+/* NOTE: MISSING SELECT COLOR */
+
+/* MAIN FONT COLOR */
+@body: #800000;
+@bodyBG: #ffffee;
+@font-family: "Times New Roman", Times, serif;
+@font-size: 1.1em;
+
+/* POST BODY */
+@postBG: #f0e0d6;
+@border: 1px solid #ffffee;
+@postmargin: 0.1em;
+
+/*NAME (ANONYMOUS)*/
+@bold: #117743;
+
+/* ALL LINKS */
+@link: #34345c;
+
+a:hover { color: #d17c43 !important; }
+blockquote a{ color: #54578c; }
+
+/* GREENTEXT */
+@em: #789922;
+
+/*OP SUBJECT*/
+@subject: #117743;
+
+/* POST BG/BORDER ON EDIT/HIGHLIGHT*/
+@postEDIT: offwhite;
+@postHL: #f0c0b0;
+
+/* BANNER */
+@bannerBG: @postBG;
+@bannernav: #0a0a0a;
+
+/* BOARD NAME */
+@boardname: red;
+
+/* ADMIN NAMES */
+@admin: #d60000;
+@mod: #7800b3;
+@red: @admin;
+
+/* HR */
+hr { border-top: 1px solid #bac9b7; }
+
+/* MAIN OPTIONS */
+@optionselect: #BA8D7A;
+
+/* POST OPTIONS */
+@postoptBG: #f5f5f5;
+@postoptHOVER: #f5f5f5;
+
+/* ?? */
+@del: black;
+@blue: #1048ff;
+
+/* BODY */
+body {
+  font-family: @font-family;
+  background-color: @bodyBG;
+  font-size: @font-size;
+}
+
+/* BG IMAGE
+body{
+  background-image: url('');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  background-position: right bottom;
+}
+/**/
+
+/* HIGHLIGHT POSTED: SELECTED; EDITING */
+article {
+  article {
+    border: @border;
+  }
+  &.highlight:not(.editing), &:target {
+    background-color: @postHL;
+    border-color: #ffffee;
+    article {
+      border: solid 1px #ffffee;
+    }
+  }
+  &.editing {
+    background-color: @postEDIT;
+    border-color: #ffffee;
+    article {
+      border: solid 1px #ffffee;
+    }
+  }
+}
+
+.popup-menu li:hover {
+  background-color: #f9fcf7;
+}
+
+.modal, .preview:not(.editing), .popup-menu {
+  background-color: #f6faf3;
+  border-right: 1px solid #e5e8e2;
+  border-bottom: 1px solid #e5e8e2;
+}
+
+/* HEADER SETTINGS */
+h1 {
+  color: #b32407;
+  font-family: "MS Pゴシック", "MS PGothic", "Mona", "Hiragino Kaku Gothic Pro", Helvetica, sans-serif;
+  font-size: 1.7em;
+  text-shadow: #8e3523 1px 1px 0px;
+  letter-spacing: 1px;
+}
+
+h2 {
+  color: #b32407;
+  font-family: "MS Pゴシック", "MS PGothic", "Mona", "Hiragino Kaku Gothic Pro", Helvetica, sans-serif;
+  text-shadow: #8e3523 1px 1px 0px;
+}
+h3 {
+  color: @subject;
+}
+
+/* STANDARD POST */
+article, aside {
+  background-color: @postBG;
+  border: @border;
+  margin-bottom: @postmargin;
+}
+
+
+a.tab-sel {
+  color: @optionselect;
+}
+
+/* HEADER LINKS*/
+#banner {
+  background: @bannerBG;
+  a {
+    color: @bannernav;
+  }
+}
+
+header nav a {
+  color: @bannernav;
+}
+
+.omit {
+  color: #73806c;
+}

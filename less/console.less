@@ -1,0 +1,163 @@
+@import "common.mix.less";
+
+/* MAIN FONT COLOR */
+@body: white;
+@bodyBG: black;
+@font-family: Monaco, "Andale Mono", Courier, monospace;
+@font-size: 0.7em;
+
+/* POST BODY */
+@postBG: black;
+@border: 1px solid gray;
+@postmargin: 0.2em;
+@setwidth: 50em;
+
+/*NAME (ANONYMOUS)*/
+@bold: white;
+
+/* LINKS */
+@link: lightsteelblue;
+@linkhover: lightgray;
+
+/* QUOTE LINK*/
+blockquote a { color: orange; }
+
+/* GREENTEXT */
+@em: lightgreen;
+
+/*OP SUBJECT*/
+@subject: greenyellow;
+
+/* POST BG/BORDER ON EDIT/HIGHLIGHT*/
+@postEDIT: blue;
+@postHL: #011a2b;
+
+/* BANNER */
+@bannerBG: black;
+@bannernav: white;
+
+/* BOARD NAME */
+@boardname: white;
+
+/* ADMIN NAMES */
+@admin: red;
+@mod: purple;
+@red: @admin;
+
+/* HR */
+hr { border-top: 1px solid white; margin-top: 2em;}
+
+/* MAIN OPTIONS */
+@optionselect: orange;
+
+/* POST OPTIONS */
+@postoptBG: black;
+@postoptHOVER: darkblue;
+
+/* ?? */
+@del: white;
+@blue: blue;
+
+/* BODY */
+body {
+  font-family: @font-family;
+  color: @body;
+  background-color: @bodyBG;
+  font-size: @font-size;
+  margin-left: 2em;
+}
+
+/* BG IMAGE
+body{
+  background-image: url('');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  background-position: right bottom;
+}
+/**/
+
+/* HIGHLIGHT POSTED: SELECTED; EDITING */
+article {
+	&.highlight:not(.editing), &:target {
+		background-color: @postHL;
+		blockquote a { color: inherit; }
+	}
+	&.editing {
+		background-color: @postEDIT;
+    border: 1px solid blue;
+		header, b {
+			color: white;
+		}
+	
+	article {
+		border: @border;
+	}
+}
+}
+
+a:hover, #sync {
+	color: orange;
+}
+
+.popup-menu li:hover {
+	background-color: @postoptHOVER;
+}
+
+.modal, .preview:not(.editing), .popup-menu {
+	background-color: @postoptBG;
+	border: 1px solid white;
+}
+
+a { color: @link; }
+a:hover { color: @linkhover !important }
+
+em { color: @em}
+
+/* HEADER SETTINGS */
+h1 {
+  color: white;
+  font-weight:bold;
+	font-size: 1.2em;
+}
+
+h2 {
+}
+h3 {
+  color: @subject;
+}
+.act { color: @body; }
+
+/* STANDARD POST */
+article, aside {
+  color: @body;
+  background-color: @postBG;
+  border: @border;
+	margin-bottom: @postmargin;
+}
+
+article { width: @setwidth; }
+
+b {
+  color: @bold;
+}
+
+a.tab-sel {
+  color: @optionselect;
+}
+
+/* HEADER LINKS*/
+#banner {
+  background: @bannerBG;
+  a {
+    color: @bannernav;
+  }
+}
+
+header nav a {
+  color: @bannernav;
+}
+
+.omit {
+  color: gray;
+}

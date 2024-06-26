@@ -1,0 +1,142 @@
+@import "common.mix.less";
+/* MAIN FONT COLOR */
+@body: black;
+@bodyBG: #eef2ff;
+@font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", Helvetica, Arial, sans-serif;
+@font-size: 1em;
+
+/* POST BODY */
+@postBG: #d6daf0;
+@border: 1px solid #b7c5d9;
+@postmargin: 0.1em;
+
+/*NAME (ANONYMOUS)*/
+@bold: #117743;
+
+/* ALL LINKS */
+@link: #34345c;
+
+a:hover { color: #d00 !important }
+
+/* GREENTEXT */
+@em: #789922;
+
+/*OP SUBJECT*/
+@subject: #0f0c5d;
+
+/* POST BG/BORDER ON EDIT/HIGHLIGHT*/
+@postEDIT: orange;
+@postHL: #d6bad0;
+@borderHL: #ba9dbf;
+
+/* BANNER */
+@bannerBG: @postBG;
+@bannernav: black;
+
+/* BOARD NAME */
+@boardname: red;
+
+/* ADMIN NAMES */
+@admin: #f00000;
+@mod: purple;
+@red: @admin;
+
+/* HR */
+hr { border-top: 1px solid #b7c5d9; }
+
+/* MAIN OPTIONS */
+@optionselect: #117743;
+
+/* POST OPTIONS */
+@postoptBG: #f5f5f5;
+@postoptHOVER: #f5f5f5;
+
+/* ?? */
+@del: black;
+@blue: #1048ff;
+
+/* BODY */
+body {
+  font-family: @font-family;
+  background-color: @bodyBG;
+  font-size: @font-size;
+}
+
+/* BG IMAGE
+body{
+  background-image: url('');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  background-position: right bottom;
+}
+/**/
+
+
+/* POST OPTIONS MENU COLOR */
+.modal, .preview:not(.editing), .popup-menu {
+  background-color: @postoptBG;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+/* POST OPTIONS MENU HIGHLIGHT */
+.popup-menu li:hover {
+  background-color: @postoptHOVER;
+}
+
+/* HEADER SETTINGS */
+h1 {
+  color: #af0a0f;
+	font: bolder 2em Tahoma;
+	letter-spacing: -2px;
+}
+
+h2 {
+  color: #af0a0f;
+	font-family: Tahoma;
+}
+h3 {
+  color: @subject;
+}
+
+/* STANDARD POST */
+article, aside {
+  background-color: @postBG;
+  border: @border;
+	margin-bottom: @postmargin;
+}
+
+
+a.tab-sel {
+  color: @optionselect;
+}
+
+/* HIGHLIGHT POSTED: SELECTED; EDITING */
+article {
+  article {
+    border: @border;
+  }
+  &.highlight:not(.editing), &:target {
+    background-color: @postHL;
+    border-color: @borderHL;
+  }
+  &.editing {
+    background-color: @postEDIT;
+    border-color: #e95;
+    article {
+      border: solid 1px #e95;
+    }
+  }
+}
+
+/* HEADER LINKS*/
+#banner {
+  background: @bannerBG;
+  a {
+    color: @bannernav;
+  }
+}
+
+.omit {
+  color: gray;
+}

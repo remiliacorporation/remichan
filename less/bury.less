@@ -1,0 +1,120 @@
+@import "common.mix.less";
+@body: #5f5faf;
+@link: #A33DA4;
+@em: #DC7BE2;
+@del: black;
+@bold: #DC7BE2;
+@postBG: #799CE8;
+@border: 1px solid #262626;
+@admin: #15CFFA;
+@mod: #5f5faf;
+@red: #bc0000;
+@blue: #5793ed;
+
+a.referenced {
+    text-decoration: none;
+    border-bottom: 1px dashed currentColor;
+}
+
+.banner-float.svg-link  a {
+    color: #64C0E8;
+}
+
+.modal hr {
+    border-top: 1px solid #99225c;
+}
+
+#banner {
+    background: #DC7BE2;
+    border-bottom: 1px solid #A33DA4;
+}
+
+blockquote a {
+    color: #7D8CD7;
+}
+
+a:hover {
+    color: #DC7BE2 !important;
+}
+
+article, aside {
+    background-color: @postBG;
+    border-right: @border;
+    border-bottom: @border;
+}
+
+article {
+    article {
+        border: @border;
+    }
+    &.highlight:not(.editing), &:target {
+        background-color: rgba(44, 44, 51, 0.88);
+        border-color: #21212c;
+        article {
+			border: solid 1px #21212c;
+		}
+    }
+    &.editing {
+        background-color: rgba(44, 57, 71, 0.88);
+        border-color: #2c2121;
+        article {
+			border: solid 1px #2c2121;
+		}
+    }
+}
+
+body {
+    background-color: #f0d8be;
+    background-image: url(bury.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right bottom;
+	background-size: 400px;
+    font-size: 10pt;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.embed, .popup-menu li:hover {
+    background-color: #e4e4e4;
+}
+
+h1, h2 {
+    color: #357EDD;
+}
+
+h1 {
+    font-family: "MS Pã‚´ã‚·ãƒƒã‚¯", "MS PGothic", Mona, "Hiragino Kaku Gothic Pro", Helvetica, sans-serif;
+    font-size: 30px;
+    text-shadow: #074854 1px 1px 0;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-family: Tahoma;
+}
+
+h3 {
+    color: #163FAB;
+}
+
+header nav a {
+    color: #7D8CD7;
+}
+
+hr {
+    border-top: 1px solid #DC7BE2;
+}
+
+.modal, .popup-menu {
+    background-color: #E8C39C;
+    border-right: 1px solid #D49149;
+    border-bottom: 1px solid #D49149;
+}
+
+.omit {
+    color: #626262;
+}
+
+a.tab-sel {
+    color: #8B3FB1;
+}
